@@ -2,6 +2,7 @@
 
 :root {
   --color-dark-cyan: hsl(158, 36%, 37%);
+  --color-dark-cyan-hover: 	hsl(156, 42%, 18%);
   --color-cream: hsl(30, 38%, 92%);
   --color-very-dark-blue: hsl(212, 21%, 14%);
   --color-dark-grayish-blue: hsl(228, 12%, 48%);
@@ -54,6 +55,7 @@ h2 {
   font-family: "Fraunces", serif;
   font-size: 1.98rem;
   line-height: 100%;
+  color: var(--color-very-dark-blue);
 }
 
 .text-container {
@@ -104,6 +106,14 @@ button {
   opacity: 60%;
 }
 
+
+/* Active States */
+
+button:hover{
+    background-color: var(--color-dark-cyan-hover);
+}
+
+
 /* Tablets and larger screens */
 
 @media only screen and (min-width: 768px) {
@@ -143,3 +153,5 @@ button {
     letter-spacing: 0.45em;
   }
 }
+
+
